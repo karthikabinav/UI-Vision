@@ -7,7 +7,6 @@ from utils import draw_coord
 
 
 model_path = "Aria-UI/Aria-UI-base"
-
 def main():
     llm = LLM(
         model=model_path,
@@ -45,8 +44,8 @@ def main():
                 "image": [
                     Image.open(image_path),
                 ],
-                "max_image_size": 980,  # [Optional] The max image patch size, default `980`, maximum `980`, the image size for splitted blocks
-                "split_image": True,  # [Optional] whether to split the images, default `True`
+                "max_image_size": 980,
+                "split_image": True,
             },
         },
         sampling_params=SamplingParams(max_tokens=50, top_k=1, stop=["<|im_end|>"]),

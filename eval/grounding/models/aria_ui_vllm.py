@@ -7,6 +7,7 @@ from utils import draw_coord
 
 
 model_path = "Aria-UI/Aria-UI-base"
+
 def main():
     llm = LLM(
         model=model_path,
